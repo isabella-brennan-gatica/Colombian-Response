@@ -4,7 +4,7 @@
 #install.packages("fastDummies")
 
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -83,7 +83,7 @@ REGRESSION<-didreg_informal_COL
 ###################
 feols_didreg_informal_COL = feols(LOG_WAGE ~ DID_2 + AGE + I(AGE^2) + GENDER + COHABITATE + EDUC + JEFE |DPTO+Time_FE, data = df_in_col)
 summary(feols_didreg_informal_COL)
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -95,7 +95,7 @@ dqrng::dqset.seed(2)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(2)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 
 #######################
@@ -111,9 +111,9 @@ merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_INFORMAL_log_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # THO_WAGE #
@@ -130,7 +130,7 @@ REGRESSION<-didreg2_informal_COL
 # STANDARD ERRORS #
 ###################
 feols_didreg2_informal_COL = feols(THO_MONTHLY_WAGE~ DID_2 + AGE + I(AGE^2) + GENDER + COHABITATE + EDUC + JEFE |DPTO+Time_FE, data = df_in_col)
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -141,7 +141,7 @@ dqrng::dqset.seed(3)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(3)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -154,9 +154,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_INFORMAL_MONTHLY_WAGE_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # HRS_WEEK #
@@ -175,7 +175,7 @@ REGRESSION<-didreg3_informal_COL
 feols_didreg3_informal_COL=feols(HRS_WRKD ~ DID_2 + AGE + I(AGE^2) + GENDER + COHABITATE + EDUC + JEFE | 
                                    DPTO + Time_FE, data = df_in_col)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -186,7 +186,7 @@ dqrng::dqset.seed(4)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(4)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -199,9 +199,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_INFORMAL_HRS_WRK_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 
 ################
@@ -222,7 +222,7 @@ feols_didreg4_informal_COL=feols(LOG_HRS_WRKD ~ DID_2 + AGE + I(AGE^2) + GENDER 
                                    DPTO + Time_FE, data = df_in_col)
 summary(feols_didreg4_informal_COL)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -233,7 +233,7 @@ dqrng::dqset.seed(4)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(4)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -246,9 +246,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_INFORMAL_LOG_HRS_WRK_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 
 
@@ -273,7 +273,7 @@ feols_didreg_formal_COL = feols(LOG_WAGE ~ DID_2 + AGE + I(AGE^2) + GENDER + COH
                                   DPTO + Time_FE, data = df_fo_col)
 summary(feols_didreg_formal_COL)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -284,7 +284,7 @@ dqrng::dqset.seed(21)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(21)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -297,9 +297,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_FORMAL_log_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # THO_WAGE #
@@ -316,7 +316,7 @@ REGRESSION<-didreg2_formal_COL
 ###################
 feols_didreg2_formal_COL = feols(THO_MONTHLY_WAGE ~ DID_2 + AGE + I(AGE^2) + GENDER + COHABITATE + EDUC + JEFE | 
                           DPTO+ Time_FE, data = df_fo_col)
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -327,7 +327,7 @@ dqrng::dqset.seed(31)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(31)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -340,9 +340,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_FORMAL_MONTHLY_WAGE_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # HRS_WEEK #
@@ -360,7 +360,7 @@ REGRESSION<-didreg3_formal_COL
 feols_didreg3_formal_COL = feols(HRS_WRKD ~ DID_2 + AGE + I(AGE^2) + GENDER + COHABITATE + EDUC + JEFE | 
                                DPTO + Time_FE, data = df_fo_col)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -371,7 +371,7 @@ dqrng::dqset.seed(41)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(41)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -384,9 +384,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_FORMAL_HRS_WRK_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ################
 # LOG_HRS_WEEK #
@@ -405,7 +405,7 @@ feols_didreg4_formal_COL = feols(LOG_HRS_WRKD ~ DID_2 + AGE + I(AGE^2) + GENDER 
                                    DPTO + Time_FE, data = df_fo_col)
 summary(feols_didreg4_formal_COL)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -416,7 +416,7 @@ dqrng::dqset.seed(41)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(41)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 #    MERGE RESULTS    #
@@ -429,9 +429,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(merged_df, "Colombia_FORMAL_LOG_HRS_WRK_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #DPTO_AGR_ANO_2018+DPTO_AGR_ANO_2019+DPTO_AGR_ANO_2020+DPTO_AGR_ANO_2021+DPTO_AGR_ANO_2022+DPTO_AGR_ANO_2023+
 #  DPTO_SERV_ANO_2018+DPTO_SERV_ANO_2019+DPTO_SERV_ANO_2020+DPTO_SERV_ANO_2021+DPTO_SERV_ANO_2022+DPTO_SERV_ANO_2023+
