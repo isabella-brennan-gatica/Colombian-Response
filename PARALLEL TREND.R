@@ -1,5 +1,5 @@
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -91,7 +91,7 @@ REGRESSION<-didreg_res
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 results_restricted <- result_table
 
 ######################
@@ -123,7 +123,7 @@ REGRESSION<-didreg_un
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 results_unrestricted <- result_table
 
