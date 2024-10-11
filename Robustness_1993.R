@@ -58,7 +58,7 @@ dqrng::dqset.seed(0123)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(0123)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #term pvalue    conflow  confhigh estimate statistic
 #DID 0.6546547 -79.17926 149.664 18.10424 0.4705731
 
@@ -106,7 +106,7 @@ dqrng::dqset.seed(1234)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(1234)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #term pvalue    conflow     confhigh    estimate statistic
 #DID 0.06506507 -0.6503576 0.02342037 -0.4419497 -3.59245
@@ -163,7 +163,7 @@ dqrng::dqset.seed(12345)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(12345)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #term pvalue    conflow     confhigh    estimate statistic
 #DID 0.1501502 -113.7847    16.15377   -35.63763 -1.502588
 
@@ -208,7 +208,7 @@ dqrng::dqset.seed(123456)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(123456)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #term pvalue    conflow     confhigh    estimate statistic
 #DID 0.6666667 -0.6175578 0.4776944 -0.1222965 -0.5026665
@@ -266,7 +266,7 @@ dqrng::dqset.seed(1234567)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(1234567)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #term pvalue    conflow     confhigh    estimate statistic
 #DID 0.5965966 -65.87617 63.00942 -26.945 -1.232042
@@ -312,7 +312,7 @@ dqrng::dqset.seed(12345678)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(12345678)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #term pvalue    conflow     confhigh    estimate statistic
 
@@ -371,7 +371,7 @@ dqrng::dqset.seed(123456789)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(123456789)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #term pvalue    conflow     confhigh    estimate statistic
 #	DID 0.1001001,  -428.2645 50.16549 -240.3792 -2.523732
@@ -417,7 +417,7 @@ dqrng::dqset.seed(1234567899)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(1234567899)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #DID pvalue 0.978979 estimate 0.01358313  tvalue 0.02878072
 
 
