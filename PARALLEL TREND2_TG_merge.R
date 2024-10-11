@@ -1,8 +1,8 @@
 rm(list=ls()) # clear workspace
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 did_col<-read_dta("DID_Results_Merged.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG/")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG/")
 
 params<-c("TG_QUARTER2018_1", "TG_QUARTER2018_2", "TG_QUARTER2018_3", "TG_QUARTER2018_4", "TG_QUARTER2019_1", "TG_QUARTER2019_2", "TG_QUARTER2019_3", "TG_QUARTER2019_4",
           "TG_QUARTER2020_1", "TG_QUARTER2020_2", "TG_QUARTER2020_3", "TG_QUARTER2020_4")
@@ -79,6 +79,6 @@ merged_df <- merge(merged_df, df9, by = "term")
 
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG/")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG/")
 write_dta(merged_df, "parallel_Results_TG_Merged.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
