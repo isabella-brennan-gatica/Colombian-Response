@@ -48,7 +48,7 @@ merged_df <- merge(merged_df,pop_vene_2005,by = "depcod")
 merged_df <- merge(merged_df,it3,by = "depcod")
 merged_df <- merge(merged_df,idist,by = "depcod")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/DPTO CHAR/")
+setwd("C:/Users/.../Colombia/DPTO CHAR/")
 
 write_dta(merged_df, "Robustness.dta")
 
@@ -73,7 +73,7 @@ data_robustness <- data_robustness %>% rename(DPTO = depcod)
 
 data_robustness$DPTO<-as.numeric(data_robustness$DPTO)
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/DPTO CHAR/")
+setwd("C:/Users/.../Colombia/DPTO CHAR/")
 
 write_dta(data_robustness, "Robustness.dta")
 #######################
@@ -81,7 +81,7 @@ write_dta(data_robustness, "Robustness.dta")
 #     DATAFRAME       #
 #######################
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 df <- read_dta("GEIH_REDUCED_2018_2023.dta")
 
 df <- merge(df, data_robustness, by = "DPTO", all = TRUE)
