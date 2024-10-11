@@ -1,5 +1,5 @@
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -23,7 +23,7 @@ library(ggplot2)
 df<- read_dta("GEIH_REDUCED_2018_2023.dta")
 
 
-#setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/DPTO CHAR/")
+#setwd("C:/Users/.../Colombia/DPTO CHAR/")
 #df_covid<- read_dta( "COVID_2020.dta") 
 #df_covid<- read_dta( "COVID_2020-23.dta")
 #df_covid <- df_covid[df_covid$ANO != 2024, ]
