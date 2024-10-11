@@ -1,7 +1,7 @@
 #install.packages("purrr")
 #install.packages("openxlsx")
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/")
+setwd("C:/Users/.../Colombia/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -448,7 +448,7 @@ columns_to_keep <-c("ID","DIRECTORIO","SECUENCIA_P","ORDEN","MES","ANO","DPTO","
 merged_18_23 <- merged_18_23[, columns_to_keep]
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #SAVE AS DTA FILE
 write_dta(merged_18_23, "GEIH_2018_2023.dta")
