@@ -4,7 +4,7 @@
 #install.packages("fastDummies")
 
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -90,11 +90,11 @@ dqrng::dqset.seed(123456)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(123)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_Full_regression.dta")
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # THO_WAGE #
@@ -120,11 +120,11 @@ dqrng::dqset.seed(134567)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(134)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_Full_MONTHLY_WAGE_regression.dta")
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # HRS_WEEK #
@@ -150,11 +150,11 @@ dqrng::dqset.seed(145678)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(145)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_Full_HRS_WRK_regression.dta")
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 
 #####################
@@ -186,11 +186,11 @@ dqrng::dqset.seed(2)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(2)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_INFORMAL_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # THO_WAGE #
@@ -217,11 +217,11 @@ dqrng::dqset.seed(245678)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(245)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_INFORMAL_MONTHLY_WAGE_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # HRS_WEEK #
@@ -248,11 +248,11 @@ dqrng::dqset.seed(256789)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(256)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_INFORMAL_HRS_WRK_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 
 #####################
@@ -284,11 +284,11 @@ dqrng::dqset.seed(345678)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(345)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_FORMAL_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # THO_WAGE #
@@ -315,11 +315,11 @@ dqrng::dqset.seed(356789)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(356)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_FORMAL_MONTHLY_WAGE_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ############
 # HRS_WEEK #
@@ -346,8 +346,8 @@ dqrng::dqset.seed(367891)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(367)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/")
 write_dta(results_df, "Colombia_FORMAL_HRS_WRK_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
