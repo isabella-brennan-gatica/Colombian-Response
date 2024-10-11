@@ -103,7 +103,7 @@ dqrng::dqset.seed(2)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(2)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 
 
@@ -175,7 +175,7 @@ dqrng::dqset.seed(3)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(3)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 #######################
 # DATASET:  EDUCATION #
@@ -247,7 +247,7 @@ dqrng::dqset.seed(4)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(4)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 
 
@@ -269,7 +269,7 @@ dqrng::dqset.seed(5)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(5)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 
 
 
