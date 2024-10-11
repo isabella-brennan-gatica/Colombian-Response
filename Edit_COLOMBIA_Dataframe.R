@@ -2,7 +2,7 @@
 #install.packages("openxlsx")
 #install.packages("Hmisc")
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -264,7 +264,7 @@ print(FORMAL_by_DPTO)
 #df$UNTREATED = ifelse(df$DPTO == 15 | df$DPTO == 17 | df$DPTO == 19 | df$DPTO == 23 | df$DPTO == 50 | 
 #                     df$DPTO == 41 | df$DPTO == 52 | df$DPTO == 63 | df$DPTO == 73 | df$DPTO == 66 | df$DPTO == 70, 1, 0)
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/DPTO CHAR/")
+setwd("C:/Users/.../Colombia/DPTO CHAR/")
 
 data_ptp <- read_dta("Col_DPTO_ptp_pop.dta")
 
@@ -294,7 +294,7 @@ df$DID = df$Policy * df$LOG_PTP
 
 #GINI INDEX 2015
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/DPTO CHAR/")
+setwd("C:/Users/.../Colombia/DPTO CHAR/")
 
 data_agr_gdp <- read.xlsx("GDP_AGR_2017_COL.xlsx")
 data_serv_gdp <- read.xlsx("GDP_SERV_2017_COL.xlsx")
@@ -349,7 +349,7 @@ DPTO_df <- DPTO_df %>% rename(DPTO_UNSAT = unsat)
 DPTO_df <- DPTO_df %>% rename(DPTO_TERROR = terror)
 
 df <- merge(df, DPTO_df, by = "DPTO", all = TRUE)
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/DESCRIPTIVE STATS/")
+setwd("C:/Users/.../DESCRIPTIVE STATS/")
 #SAVE AS DTA FILE
 write_dta(DPTO_df, "Col_DPTO_DF.dta")
 
@@ -382,7 +382,7 @@ data <- df %>% select(ID,DIRECTORIO,SECUENCIA_P,ORDEN,MES,ANO,DPTO,URBAN,INGLABO
 #     DATAFRAME       #
 #######################
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #SAVE AS DTA FILE
 write_dta(data, "GEIH_REDUCED_2018_2023.dta")
@@ -446,7 +446,7 @@ df_in_col <- subset(df_in, df_in$COLOMBIAN == 1)
 #DATA informal :Migrant
 df_in_ven <- subset(df_in, df_in$MIGRANT == 1)
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #SAVE AS DTA FILE
 write_dta(df_in_col, "Colombian_informal.dta")
