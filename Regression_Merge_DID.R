@@ -1,4 +1,4 @@
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 
 df_col_in_log <- read_dta ("Colombia_INFORMAL_log_regression.dta")
 df1 <- df_col_in_log %>%
@@ -87,20 +87,20 @@ df16 <- df_mig_fo_loghrs %>%
 new_df <- bind_rows(df1,df2,df3,df13,df4,df5,df6,df14,df7,df8,df9,df15,df10,df11,df12, df16)
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 write_dta(new_df, "Continuous_DID_Results_Merged.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
-#setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
+#setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/")
 #df_T_U <- read_dta ("TREATED_UNTREATED_DID_Results_Merged.dta")
 
-#setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/ANO2019/")
+#setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/CONTINUOUS/ANO2019/")
 #df_T_U_19 <- read_dta ("TREATED_UNTREATED_2019_DID_Results_Merged.dta")
 
-#setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/")
+#setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/")
 #df_T_DPTO <- read_dta ("ALL_DPTO_DID_Results_Merged.dta")
 
-#setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/ANO2019/")
+#setwd("C:/Users/.../Colombia/GEIH DATA/REGRESSION RESULTS/ALL_DPTO/ANO2019/")
 #df_T_DPTO_19 <- read_dta ("ALL_DPTO_2019_DID_Results_Merged.dta")
 
 
