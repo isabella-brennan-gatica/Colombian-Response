@@ -2,7 +2,7 @@
 install.packages("openxlsx")
 install.packages("Hmisc")
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/")
+setwd("C:/Users/.../Colombia/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
