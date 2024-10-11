@@ -1,5 +1,5 @@
 rm(list=ls()) # clear workspace
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 library(haven) #read dataframes
 library(dplyr) #modify columns
@@ -197,7 +197,7 @@ REGRESSION<-parrallel11
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -209,7 +209,7 @@ dqrng::dqset.seed(111)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(111)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -223,9 +223,9 @@ merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "FULL_THO_MONTHLY_WAGE_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ##############
 #  HRS_WRKD  #
@@ -244,7 +244,7 @@ REGRESSION<-parrallel21
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -256,7 +256,7 @@ dqrng::dqset.seed(121)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(121)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -269,9 +269,9 @@ rows_to_move <- merged_df$term %in% params
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "FULL_HRS_WRKD_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #######################
 #  LOG_WAGE DATASET   #
@@ -290,7 +290,7 @@ REGRESSION<-parrallel31
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -302,7 +302,7 @@ dqrng::dqset.seed(131)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(131)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -314,9 +314,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 full_log_wage<-merged_df
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "FULL_LOG_WAGE_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 
 
@@ -343,7 +343,7 @@ REGRESSION<-parrallel1
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -355,7 +355,7 @@ dqrng::dqset.seed(10)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(10)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -369,9 +369,9 @@ merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "FORMAL_THO_MONTHLY_WAGE_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ##############
 #  HRS_WRKD  #
@@ -390,7 +390,7 @@ REGRESSION<-parrallel2
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -402,7 +402,7 @@ dqrng::dqset.seed(101)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(101)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -415,9 +415,9 @@ rows_to_move <- merged_df$term %in% params
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "FORMAL_HRS_WRKD_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #######################
 #  LOG_WAGE DATASET   #
@@ -438,7 +438,7 @@ print(boot4)
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -450,7 +450,7 @@ dqrng::dqset.seed(102)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(102)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -462,9 +462,9 @@ rows_to_move <- merged_df$term %in% params
 # Move these rows to the top
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 formal_log_Wage<-merged_df
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "FORMAL_LOG_WAGE_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 
 ############################################################
@@ -488,7 +488,7 @@ REGRESSION<-parrallel111
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -500,7 +500,7 @@ dqrng::dqset.seed(122)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(122)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 boot3<-boottest(REGRESSION,param="TG_QUARTER2019_1", B=999,clustid = "DPTO")
 print(boot3)
 boot3<-boottest(REGRESSION,param="TG_QUARTER2019_2", B=999,clustid = "DPTO")
@@ -525,9 +525,9 @@ merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "INFORMAL_THO_MONTHLY_WAGE_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 ##############
 #  HRS_WRKD  #
@@ -546,7 +546,7 @@ REGRESSION<-parrallel222
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -558,7 +558,7 @@ dqrng::dqset.seed(133)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(133)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 #######################
 #    MERGE RESULTS    #
 #######################
@@ -571,9 +571,9 @@ rows_to_move <- merged_df$term %in% params
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "INFORMAL_HRS_WRKD_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
 
 #######################
 #  LOG_WAGE DATASET   #
@@ -593,7 +593,7 @@ summary(REGRESSION)
 # STANDARD ERRORS #
 ###################
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/Clustered_Standard_Error_code.R")
 
 #################################
 # WILD CLUSTERED BOOTSTRAP      #
@@ -605,7 +605,7 @@ dqrng::dqset.seed(144)
 # set 'familiar' seed for all other algorithms and weight types 
 set.seed(144)
 
-source("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH R CODE/WildBootstrap_code.R")
+source("C:/Users/.../Colombia/GEIH R CODE/WildBootstrap_code.R")
 boot2<-boottest(REGRESSION,param="TG_QUARTER2019_1", B=999,clustid = "DPTO")
 print(boot2)
 boot5<-boottest(REGRESSION,param="TG_QUARTER2019_4", B=999,clustid = "DPTO")
@@ -624,6 +624,6 @@ rows_to_move <- merged_df$term %in% params
 merged_df <- merged_df[c(which(rows_to_move), which(!rows_to_move)), ]
 informal_log_wage<- merged_df
 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
+setwd("C:/Users/.../Colombia/GEIH DATA/PARALLEL TREND ASSUMPTION/TG")
 write_dta(merged_df, "INFORMAL_LOG_WAGE_TG_QUART_regression.dta") 
-setwd("C:/Users/isabe/OneDrive/Documents/Bella_Cloud_Documents/UCD_cloud/Summer 2024 - Thesis/Colombia/GEIH DATA/")
+setwd("C:/Users/.../Colombia/GEIH DATA/")
